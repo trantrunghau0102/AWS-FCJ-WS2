@@ -11,7 +11,7 @@
 	"title": "Create S3 ",
 	"tags": [],
 	"description": "",
-	"content": " Go to S3 service management console, preferrably in the us-west-2 region   Click Create bucket In the Bucket name, enter migration-data-to-aws-lab Leave everything else default. Click Create bucket  In the S3 bucket service management, click S3 bucket just created.   Click Create folder Enter Folder name: assets Click Create folder  Download the CloudFormation templates blow   Migrating Data to AWS (On-premise) Migrating Data to AWS (Cloud)  Upload all the files you just downloaded to the assets foldet of S3 bucket.  "
+	"content": " Go to S3 service management console, preferrably in the us-west-2 region   Click Create bucket In the Bucket name, enter migration-data-to-aws-lab Leave everything else default. Click Create bucket  In the S3 bucket service management, click S3 bucket just created.   Click Create folder Enter Folder name: assets Click Create folder  Download the CloudFormation templates blow   [Base Template](https://static.us-east-1.prod.workshops.aws/public/8941fd45-1cbb-4673-a51b-8cfaa871be34/static/assets/sid-base-template.yaml) Migrating Data to AWS (On-premise) [Migrating Data to AWS (Cloud)](https://static.us-east-1.prod.workshops.aws/public/8941fd45-1cbb-4673-a51b-8cfaa871be34/static/assets/sid-datamigration-cloud.yaml)   Upload all the files you just downloaded to the assets foldet of S3 bucket.  "
 },
 {
 	"uri": "/1-introduce/",
