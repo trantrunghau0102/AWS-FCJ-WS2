@@ -12,21 +12,21 @@
     <title>Deploy CloudFormation template  :: AWS System Manager</title>
 
     
-    <link href="/AWS-FCJ-WS2/css/nucleus.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hybrid.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/theme.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1712763396" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/nucleus.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hybrid.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1712763811" rel="stylesheet">
     
-    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1712763396" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1712763811" rel="stylesheet">
     
     
 
-    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1712763811"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1712763396"></script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1712763396"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1712763811"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1712763811"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/trantrunghau0102.github.io\/AWS-FCJ-WS2\/";
+        var baseurl = "https:\/\/trantrunghau0102.github.io\/AWS-FCJ-WS2";
     
 </script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1712763396"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1712763811"></script>
 
     
   </div>
@@ -593,7 +593,7 @@
 <li>Enter the following in the <strong>Amazon S3 URL</strong> field, replacing <strong>{AssetsBucketName}</strong> with the name of the Amazon S3 bucket you uploaded your templates to. Then click the <strong>Next</strong> button.</li>
 </ul>
 <p><code>https://s3.amazonaws.com/${AssetsBucketName}/assets/sid-base-template.yaml</code></p>
-<p><img src="/images/2.2/Untitled.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/2.2/Untitled.png" alt="Untitled"></p>
 <p>Enter <strong>SID</strong> as the <strong>Stack name.</strong></p>
 <ul>
 <li>Under <strong>Parameters</strong> you will see <strong>Lab modules</strong>. Choose <strong>true</strong> in the <strong>Deploy Data Migration Lab</strong>. Leave the other lab as <strong>false</strong>.</li>
@@ -601,13 +601,13 @@
 <li>For the <strong>Prefix to CloudFormation templates</strong> parameter, leave the default value of <strong>assets</strong>.</li>
 </ul>
 <p>Click <strong>Next.</strong></p>
-<p><img src="/images/2.2/Untitled%201.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/2.2/Untitled%201.png" alt="Untitled"></p>
 <p>Accepts the defaults on the <strong>Configure stack options</strong> page and click <strong>Next</strong>.</p>
 <p>Scroll to the bottom of the <strong>Review</strong> pages. In the <strong>Capabilties</strong> section, select the check boxes at the bottom of the page, acknowledging CloudFormation will create the necessary IAM resources. Click <strong>Submit</strong> to begin stack creation.</p>
-<p><img src="/images/2.2/Untitled%202.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/2.2/Untitled%202.png" alt="Untitled"></p>
 <p>It will take between 20-30 minutes for the template to deploy depending on which lab(s) you selected. If you selected all four labs, your screen will look similar to the following.</p>
 <p>When deployment complete, check the outputs.</p>
-<p><img src="/images/2.2/Untitled%203.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/2.2/Untitled%203.png" alt="Untitled"></p>
 <ul>
 <li><strong>AppServerPrivateIP</strong> – This is the private IP address of the Application Server. You will use this when creating the File Gateway file share to limit access to the NFS export.</li>
 <li><strong>DataSyncAgentPublicIP</strong> – This is the public IP address of the EC2 instance running the DataSync agent. You will use this when activating the DataSync agent.</li>
@@ -622,14 +622,14 @@
 <li>Enter the following in the <strong>Amazon S3 URL</strong> field, replacing <strong>${AssetsBucketName}</strong> with the name of the Amazon S3 bucket you uploaded your templates to. Then click the <strong>Next</strong> button.</li>
 </ul>
 <p><strong><a href="https://s3.amazonaws.com/$%7BAssetsBucketName%7D/assets/sid-datamigration-cloud.yaml">https://s3.amazonaws.com/${AssetsBucketName}/assets/sid-datamigration-cloud.yaml</a></strong></p>
-<p><img src="/images/2.2/Untitled%204.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/2.2/Untitled%204.png" alt="Untitled"></p>
 <p>On the <strong>Specify stack details</strong> page, enter <strong>SID-DS</strong> for the <strong>Stack name</strong> and click <strong>Next</strong>.</p>
-<p><img src="/images/2.2/Untitled%205.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/2.2/Untitled%205.png" alt="Untitled"></p>
 <p>On the <strong>Configure stack options</strong> page, leave the defaults and click <strong>Next</strong>.</p>
 <p>On the <strong>Review</strong> page, confirm your selections and select the check boxes at the bottom of the page, acknowledging CloudFormation will create the necessary IAM resources. Click <strong>Submit.</strong></p>
-<p><img src="/images/2.2/Untitled%206.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/2.2/Untitled%206.png" alt="Untitled"></p>
 <p>When deployment complete, check the outputs.</p>
-<p><img src="/images/2.2/Untitled%207.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/2.2/Untitled%207.png" alt="Untitled"></p>
 <ul>
 <li><strong>S3BucketName</strong> – This is the name of the S3 bucket where the data will be copied to. You will use this when creating a file share on the File Gateway.</li>
 <li><strong>BucketRoleForDataSync</strong> – This is the role that will be used by the DataSync agent to write files to the S3 bucket. You will use this when creating the S3 location for DataSync.</li>
@@ -883,19 +883,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1712763811"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/learn.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/learn.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1712763811"></script>
 
-    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1712763396" rel="stylesheet" />
-    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1712763396"></script>
+    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1712763811" rel="stylesheet" />
+    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1712763811"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

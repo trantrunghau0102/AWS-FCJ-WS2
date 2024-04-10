@@ -12,21 +12,21 @@
     <title>Incremental Copy Cutover :: AWS System Manager</title>
 
     
-    <link href="/AWS-FCJ-WS2/css/nucleus.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hybrid.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/theme.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1712763396" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/nucleus.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hybrid.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1712763811" rel="stylesheet">
     
-    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1712763396" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1712763811" rel="stylesheet">
     
     
 
-    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1712763811"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1712763396"></script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1712763396"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1712763811"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1712763811"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/trantrunghau0102.github.io\/AWS-FCJ-WS2\/";
+        var baseurl = "https:\/\/trantrunghau0102.github.io\/AWS-FCJ-WS2";
     
 </script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1712763396"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1712763811"></script>
 
     
   </div>
@@ -591,22 +591,22 @@
 <h3 id="1-create-a-new-file-on-the-nfs-server">1. Create a new file on the NFS server</h3>
 <p>Connect to <strong>SID-appserver</strong> via <strong>EC2 Instance Connect</strong></p>
 <p>In the CLI, run the following command.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">cp</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">data</span><span style="color:#f92672">/</span><span style="color:#a6e22e">images</span><span style="color:#f92672">/</span><span style="color:#ae81ff">00001.</span><span style="color:#a6e22e">jpg</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">data</span><span style="color:#f92672">/</span><span style="color:#66d9ef">new</span><span style="color:#f92672">-</span><span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">jpg</span>
-</code></pre></div><p><img src="/images/3.3/Untitled.png" alt="Untitled"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">cp</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">data</span><span style="color:#f92672">/</span><span style="color:#a6e22e">AWS</span><span style="color:#f92672">-</span><span style="color:#a6e22e">FCJ</span><span style="color:#f92672">-</span><span style="color:#a6e22e">WS2</span><span style="color:#f92672">/</span><span style="color:#a6e22e">images</span><span style="color:#f92672">/</span><span style="color:#ae81ff">00001.</span><span style="color:#a6e22e">jpg</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">data</span><span style="color:#f92672">/</span><span style="color:#66d9ef">new</span><span style="color:#f92672">-</span><span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">jpg</span>
+</code></pre></div><p><img src="/AWS-FCJ-WS2/images/3.3/Untitled.png" alt="Untitled"></p>
 <h3 id="2-copy-the-new-file-to-the-s3-bucket">2. Copy the new file to the S3 bucket</h3>
 <p>You have already created a DataSync task to copy files from the NFS server to the S3 bucket. To copy the new file, you will just re-run the task. DataSync will only copy files that have changed between the source and the destination.</p>
 <p>Make sure you are in the <strong>In-cloud region (us-east-1)</strong> environment.</p>
 <p>From the AWS console, click <strong>Services</strong> and select <strong>DataSync</strong>.</p>
 <p>Select the task you created previously and click the <strong>Start</strong> button then <strong>Start with defaults</strong>.</p>
-<p><img src="/images/3.3/Untitled%201.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%201.png" alt="Untitled"></p>
 <p>Click on the <strong>Task history</strong> tab to monitor the progress.</p>
-<p><img src="/images/3.3/Untitled%202.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%202.png" alt="Untitled"></p>
 <p>Click on the newest task to watch the task progress. It will take a few minutes for the task to complete.</p>
-<p><img src="/images/3.3/Untitled%203.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%203.png" alt="Untitled"></p>
 <h3 id="3-validate-the-data-transfer-to-s3">3. Validate the data transfer to S3</h3>
 <p>Remaining in the In-cloud region (us-east-1), click services and select S3.</p>
 <p>Select the <strong>sid-datasync-xxxxxxx</strong> bucket.</p>
-<p><img src="/images/3.3/Untitled%204.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%204.png" alt="Untitled"></p>
 
 <div class="notices info" ><p>You should now see the <strong>new-image.jpg</strong> you created earlier.</p>
 </div>
@@ -616,14 +616,14 @@
 <p>Connect to <strong>SID-appserver</strong> via <strong>EC2 Instance Connect</strong></p>
 <p>In the CLI, run the following command.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">ls</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">data</span>
-</code></pre></div><p><img src="/images/3.3/Untitled%205.png" alt="Untitled"></p>
+</code></pre></div><p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%205.png" alt="Untitled"></p>
 
 <div class="notices info" ><p>You can see the image exists locally. Now run the following command to see if it exists on the File Gateway you created.</p>
 </div>
 
 <p>In the CLI, run the following command.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">ls</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">fgw</span>
-</code></pre></div><p><img src="/images/3.3/Untitled%206.png" alt="Untitled"></p>
+</code></pre></div><p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%206.png" alt="Untitled"></p>
 
 <div class="notices info" ><p>Notice the image isn&rsquo;t there. You copied the file from the NFS server to S3 using DataSync and the File Gateway is connected to the S3 bucket. So what&rsquo;s going on? Why can&rsquo;t you see the file on the File Gateway share on the Application server?</p>
 </div>
@@ -634,11 +634,11 @@
 <p>From the AWS console, click <strong>Services</strong> and select <strong>Storage Gateway</strong>.</p>
 <p>Click on <strong>File shares</strong></p>
 <p>Click on the checkbox for the file share you created earlier. On the <strong>Actions</strong> drop-down select <strong>Refresh cache</strong> and click <strong>Start</strong>.</p>
-<p><img src="/images/3.3/Untitled%207.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%207.png" alt="Untitled"></p>
 <p>Return to the On-premises (us-west-2) environment.</p>
 <p>In your SSH session, run the following command.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">ls</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">fgw</span>
-</code></pre></div><p><img src="/images/3.3/Untitled%208.png" alt="Untitled"></p>
+</code></pre></div><p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%208.png" alt="Untitled"></p>
 
 <div class="notices info" ><p>Now you will see the <strong>new-image.jpg</strong> we created earlier.</p>
 </div>
@@ -892,19 +892,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1712763811"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/learn.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/learn.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1712763811"></script>
 
-    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1712763396" rel="stylesheet" />
-    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1712763396"></script>
+    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1712763811" rel="stylesheet" />
+    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1712763811"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -12,21 +12,21 @@
     <title>Sao chép dữ liệu on-premises lên S3 bằng DataSync :: AWS System Manager</title>
 
     
-    <link href="/AWS-FCJ-WS2/css/nucleus.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hybrid.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/theme.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1712763396" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/nucleus.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hybrid.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1712763811" rel="stylesheet">
     
-    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1712763396" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1712763811" rel="stylesheet">
     
     
 
-    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1712763811"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1712763396"></script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1712763396"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1712763811"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1712763811"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/trantrunghau0102.github.io\/AWS-FCJ-WS2\/\/vi";
+        var baseurl = "https:\/\/trantrunghau0102.github.io\/AWS-FCJ-WS2\/vi";
     
 </script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1712763396"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1712763811"></script>
 
     
   </div>
@@ -592,7 +592,7 @@
 <li>Nhấp vào nút <strong>Transfer data</strong> (Truyền dữ liệu).</li>
 <li>Ở cột bên trái, nhấp vào <strong>Agents</strong> sau đó nhấp vào nút <strong>Create agent</strong> (Tạo agent).</li>
 </ul>
-<p><img src="/images/3.1/Untitled.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled.png" alt="Untitled"></p>
 <p>Trong tab <strong>Create agent</strong> (Tạo agent)</p>
 <ul>
 <li>Giữ mặc định <strong>Deploy agent</strong> (Triển khai agent). Agent đã được triển khai tới một instance (thể hiện) trong vùng on-premises (us-west-2).</li>
@@ -600,9 +600,9 @@
 <li>Trong phần <strong>Activation key</strong> (Khóa kích hoạt), nhập <strong>Public IP address</strong> (Địa chỉ IP công khai) của <strong>DataSync agent instance</strong> (Thể hiện instance của agent DataSync) chạy trong vùng on-premises.</li>
 <li>Nhấp vào <strong>Get key</strong> (Lấy khóa).</li>
 </ul>
-<p><img src="/images/3.1/Untitled%201.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%201.png" alt="Untitled"></p>
 <p>Giữ mặc định và nhấp vào <strong>Create agent</strong> (Tạo agent). Sao chép <strong>agent-id</strong> vào trình soạn thảo văn bản yêu thích của bạn.</p>
-<p><img src="/images/3.1/Untitled%202.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%202.png" alt="Untitled"></p>
 <h2 id="tạo-vị-trí-nfs-nfs-location">Tạo Vị trí NFS (NFS Location)</h2>
 <p>Ở phía bên trái của trang dịch vụ DataSync, nhấp vào <strong>Locations</strong> (Vị trí) &gt; <strong>Create location</strong> (Tạo vị trí).</p>
 <ul>
@@ -612,8 +612,8 @@
 <li>Trong <strong>Mount path</strong> (Đường dẫn mount) nhập <strong>/media/data</strong>.</li>
 <li>Nhấp vào <strong>Create location</strong> (Tạo vị trí).</li>
 </ul>
-<p><img src="/images/3.1/Untitled%203.png" alt="Untitled"></p>
-<p><img src="/images/3.1/Untitled%204.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%203.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%204.png" alt="Untitled"></p>
 <h2 id="tạo-vị-trí-s3-s3-location">Tạo Vị trí S3 (S3 Location)</h2>
 <p>Ở phía bên trái của trang dịch vụ DataSync, nhấp vào <strong>Locations</strong> (Vị trí).</p>
 <p>Nhấp vào <strong>Create location</strong> (Tạo vị trí).</p>
@@ -623,10 +623,10 @@
 <li>Giữ mặc định <strong>S3 storage class</strong> (Lớp lưu trữ S3) thành <strong>Standard</strong> (Tiêu chuẩn).</li>
 <li>Trong <strong>Folder</strong> (Thư mục), nhập <strong>/</strong>. Thao tác này sẽ sao chép tất cả các file vào bucket cấp cao nhất.</li>
 </ul>
-<p><img src="/images/3.1/Untitled%5.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%5.png" alt="Untitled"></p>
 <p>Nhấp vào <strong>Create location</strong> (Tạo vị trí).</p>
 <p>Nhấp vào <strong>Locations</strong> (Vị trí) ở phía bên trái của trang. Bạn sẽ có hai vị trí, một cho máy chủ NFS và một cho bucket S3.</p>
-<p><img src="/images/3.1/Untitled%206.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%206.png" alt="Untitled"></p>
 <h2 id="tạo-tác-vụ-task">Tạo tác vụ (Task)</h2>
 <p>Ở phía bên trái của trang dịch vụ DataSync, nhấp vào <strong>Tasks</strong> (Tác vụ) &gt; <strong>Create task</strong> (Tạo tác vụ)</p>
 <p>Trong <strong>Bước 1 - Cấu hình vị trí nguồn (Source location)</strong></p>
@@ -635,34 +635,34 @@
 <li>Trong <strong>Choose existing location</strong> (Chọn vị trí hiện có), chọn vị trí máy chủ NFS mà chúng ta đã tạo trước đó. Màn hình của bạn sẽ trông tương tự như hình sau.</li>
 <li>Nhấp vào <strong>Next</strong> (Tiếp theo).</li>
 </ul>
-<p><img src="/images/3.1/Untitled%207.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%207.png" alt="Untitled"></p>
 <p>Trong <strong>Bước 2 - Cấu hình vị trí đích (Destination location)</strong></p>
 <ul>
 <li>Trong <strong>Destination location options</strong> (Tùy chọn vị trí đích), chọn <strong>Choose an existing location</strong> (Chọn vị trí hiện có).</li>
 <li>Trong <strong>Choose existing location</strong> (Chọn vị trí hiện có), chọn vị trí S3 mà chúng ta đã tạo trước đó. Màn hình của bạn sẽ trông tương tự như hình sau.</li>
 <li>Nhấp vào <strong>Next</strong> (Tiếp theo).</li>
 </ul>
-<p><img src="/images/3.1/Untitled%208.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%208.png" alt="Untitled"></p>
 <p>Ở phía dưới trang <strong>Configure settings</strong> (Cấu hình cài đặt), nhấp vào <strong>Autogenerate</strong> (Tự động tạo) để tự động tạo một nhóm nhật ký CloudWatch. Giữ nguyên các giá trị mặc định khác. Nhấp vào <strong>Next</strong> (Tiếp theo).</p>
-<p><img src="/images/3.1/Untitled%209.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%209.png" alt="Untitled"></p>
 <p>Trên trang <strong>Review</strong> (Kiểm tra), giữ nguyên tất cả các giá trị mặc định và nhấp vào <strong>Create task</strong> (Tạo tác vụ).</p>
 <h2 id="chạy-tác-vụ-run-the-task">Chạy tác vụ (Run the task)</h2>
 <p>Kiểm tra xem <strong>Task status</strong> (Trạng thái tác vụ) là <strong>available</strong> (có sẵn). Có thể mất vài phút.</p>
 <p>Nhấp vào <strong>Start</strong> (Bắt đầu), giữ nguyên các cài đặt mặc định và nhấp vào <strong>Start</strong> (Bắt đầu). <strong>Task status</strong> (Trạng thái tác vụ) sẽ chuyển sang <strong>running</strong> (chạy).</p>
-<p><img src="/images/3.1/Untitled%2010.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%2010.png" alt="Untitled"></p>
 <p>Khi tác vụ chạy, <strong>Execution status</strong> (Trạng thái thực thi) sẽ chuyển từ &ldquo;Launching&rdquo; (Đang khởi chạy) sang &ldquo;Preparing&rdquo; (Đang chuẩn bị) sang &ldquo;Transferring&rdquo; (Đang truyền) sang &ldquo;Verifying&rdquo; (Đang xác minh) và cuối cùng là &ldquo;Success&rdquo; (Thành công).</p>
 
 <div class="notices info" ><p>Việc truyền dữ liệu sẽ mất vài phút. Tỷ lệ truyền có thể là 0% và sau đó hoàn thành ngay lập tức. Điều này là do khi tác vụ bắt đầu, chỉ có một lượng nhỏ dữ liệu được truyền.</p>
 </div>
 
 <p>Sau khi hoàn thành, <strong>Execution status</strong> (Trạng thái thực thi) sẽ chuyển thành <strong>success</strong> (thành công). Bạn có thể thấy rằng chúng tôi đã di chuyển 202 file. Đây là kết quả cho 200 file trong tập dữ liệu và hai thư mục trong đường dẫn dữ liệu.</p>
-<p><img src="/images/3.1/Untitled%2011.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%2011.png" alt="Untitled"></p>
 <h2 id="xác-minh-quá-trình-truyền-dữ-liệu-validate-the-data-transfer">Xác minh quá trình truyền dữ liệu (Validate the data transfer)</h2>
 <p>Truy cập <strong><a href="https://console.aws.amazon.com/s3">Bảng điều khiển quản lý dịch vụ S3:</a></strong></p>
 <p>Chọn bucket <strong>sid-datasync-xxxxxxx</strong>.</p>
-<p><img src="/images/3.1/Untitled%2012.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%2012.png" alt="Untitled"></p>
 <p>Nhấp vào thư mục <strong>images</strong>. Bạn sẽ thấy 200 objects bạn đã di chuyển từ máy chủ NFS on-premises.</p>
-<p><img src="/images/3.1/Untitled%2013.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%2013.png" alt="Untitled"></p>
 <p>Trong module này, bạn đã kích hoạt thành công các <strong>DataSync agents</strong> và tạo tác vụ để copy files từ máy chủ NFS on-premises vào S3 bucket. Sau đó, bạn đã xác minh rằng các files đã được copy thành công.</p>
 
 
@@ -909,19 +909,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1712763811"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/learn.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/learn.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1712763811"></script>
 
-    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1712763396" rel="stylesheet" />
-    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1712763396"></script>
+    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1712763811" rel="stylesheet" />
+    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1712763811"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

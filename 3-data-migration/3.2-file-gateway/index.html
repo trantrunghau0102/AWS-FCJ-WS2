@@ -12,21 +12,21 @@
     <title>Acces S3 bucket from on-premises using File Gateway :: AWS System Manager</title>
 
     
-    <link href="/AWS-FCJ-WS2/css/nucleus.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hybrid.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/theme.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1712763396" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/nucleus.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hybrid.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1712763811" rel="stylesheet">
     
-    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1712763396" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1712763811" rel="stylesheet">
     
     
 
-    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1712763811"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1712763396"></script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1712763396"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1712763811"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1712763811"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/trantrunghau0102.github.io\/AWS-FCJ-WS2\/";
+        var baseurl = "https:\/\/trantrunghau0102.github.io\/AWS-FCJ-WS2";
     
 </script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1712763396"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1712763811"></script>
 
     
   </div>
@@ -600,20 +600,20 @@
 <li>Give the Gateway a name <strong>DataMigrationGateway</strong></li>
 <li>Select <strong>Amazon S3 File Gateway</strong> and scroll to the next section <strong>Platform options</strong>.</li>
 </ul>
-<p><img src="/images/3.2/Untitled.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.2/Untitled.png" alt="Untitled"></p>
 <ul>
 <li>Select <strong>Amazon EC2</strong> as the host platform. The gateway was already deployed for you so check the box at the bottom.</li>
 <li>Select <strong>Customize your settings</strong>. <strong>Do not click on Launch instance</strong></li>
 <li>At the bottom of the page check the box to <strong>Confirm set up gateway</strong> is completed</li>
 </ul>
-<p><img src="/images/3.2/Untitled%201.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.2/Untitled%201.png" alt="Untitled"></p>
 <p>Click <strong>Next</strong></p>
 <h3 id="2-connect-to-aws">2. Connect to AWS</h3>
 <p>Select <strong>IP adress</strong>, Enter the Public IP address of the File Gateway. You should have copied this IP from the CloudFormation Outputs tab to your favorite text editor. Click <strong>Next</strong>.</p>
-<p><img src="/images/3.2/Untitled%202.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.2/Untitled%202.png" alt="Untitled"></p>
 <h3 id="3-review-and-activate">3. Review and activate</h3>
 <p>Review the details on the screen, should look similar to this, if so Click <strong>Activate gateway</strong></p>
-<p><img src="/images/3.2/Untitled%203.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.2/Untitled%203.png" alt="Untitled"></p>
 <h3 id="4-configure-cache-storage">4. Configure cache Storage</h3>
 <p>Wait for a few seconds while the <strong>Disk ID</strong> loads, otherwise you will have to assign them manually.</p>
 <ul>
@@ -621,45 +621,45 @@
 <li>Ensure <strong>Allocated to</strong> is set to <strong>Cache</strong>.</li>
 <li>Leave all settings to the <strong>Default</strong> values and Click <strong>Configure</strong></li>
 </ul>
-<p><img src="/images/3.2/Untitled%204.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.2/Untitled%204.png" alt="Untitled"></p>
 <p>From the main Storage Gateway page, you should see the <strong>Status</strong> as <strong>Running</strong>. Your screen should look similar to the following.</p>
-<p><img src="/images/3.2/Untitled%205.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.2/Untitled%205.png" alt="Untitled"></p>
 <h3 id="5-create-an-nfs-share-on-the-file-gateway">5. Create an NFS share on the File Gateway</h3>
 <p>From the main Storage Gateway page, select the <strong>DataMigrationGateway</strong> and click <strong>Create file share</strong>.</p>
-<p><img src="/images/3.2/Untitled%206.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.2/Untitled%206.png" alt="Untitled"></p>
 <p>Click the <strong>Customize configuration</strong> button at the bottom of the page.</p>
 <ul>
 <li>For the <strong>Amazon S3 bucket name</strong>, enter the name of the S3 bucket that DataSync copied the files to.</li>
 <li>Under <strong>Access objects using</strong>, select <strong>Network File System (NFS)</strong>. Your screen should look similar to the following. Leave the remaining options to <strong>Default</strong></li>
 </ul>
-<p><img src="/images/3.2/Untitled%207.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.2/Untitled%207.png" alt="Untitled"></p>
 <p>Click <strong>Next</strong>.</p>
 <p>On the <strong>Amazon S3 Storage configuration</strong> page, leave the default settings except under <strong>Access to your S3 bucket</strong> Leave the defaults, click <strong>Next</strong>.</p>
-<p><img src="/images/3.2/Untitled%208.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.2/Untitled%208.png" alt="Untitled"></p>
 <p>On the <strong>File access settings</strong> page, under <strong>Access object</strong> click <strong>Add client</strong>.</p>
 <ul>
 <li>Add the IP address to the private IP address of the <strong>Application Server</strong> followed by a <strong>/32</strong> CIDR.</li>
 <li>Under <strong>Mount Options</strong> Change the <strong>Squash level</strong> to <strong>No root squash</strong>. Leave the remaining options as the defaults.</li>
 </ul>
-<p><img src="/images/3.2/Untitled%209.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.2/Untitled%209.png" alt="Untitled"></p>
 <p>Click <strong>Next</strong>.</p>
 <h3 id="6-review-and-create">6. Review and create</h3>
 <p>Review the configuration of the file share and click <strong>Create</strong></p>
 <p>Click on the <strong>File share ID</strong> that we created and note the mount instructions at the bottom of the page under <strong>Example Commands</strong>.</p>
 <p>Click on the <strong>Copy</strong> next to the Linux mount to your favorite text editor.</p>
-<p><img src="/images/3.2/Untitled%2010.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.2/Untitled%2010.png" alt="Untitled"></p>
 <h3 id="7-mount-the-nfs-share-on-the-application-server">7. Mount the NFS Share on the Application Server</h3>
 <p>Return to the <strong>SID-appserver</strong> instance <strong>CLI</strong>.</p>
 <p>Run the following command.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">mkdir</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">fgw</span>
 </code></pre></div><p>Copy the Linux mount command from the Storage Gateway file share page and replace &ldquo;[MountPath]&rdquo; with &ldquo;/mnt/fgw&rdquo;. You must run the command as sudo</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">mount</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">t</span> <span style="color:#a6e22e">nfs</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">o</span> <span style="color:#a6e22e">nolock</span>,<span style="color:#a6e22e">hard</span> <span style="color:#ae81ff">10.11.12.133</span><span style="color:#f92672">:</span><span style="color:#960050;background-color:#1e0010">/sid-datasync-d8b2dd90-f688-11ee-89bf-0e4af0394e11 /mnt/fgw</span>
-</code></pre></div><p><img src="/images/3.2/Untitled%2011.png" alt="Untitled"></p>
+</code></pre></div><p><img src="/AWS-FCJ-WS2/images/3.2/Untitled%2011.png" alt="Untitled"></p>
 <h3 id="8-validate-the-files-exist-in-both-nfs-shares">8. Validate the files exist in both NFS shares</h3>
 <p>Run the following command to verify that the same set of files exists on both NFS shares.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">diff</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">qr</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">data</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">fgw</span>
 </code></pre></div><p>You should see only one extra file in /mnt/fgw: .aws-datasync-metadata. DataSync created this file in the S3 bucket when the task was executed. All other files are the same, showing that DataSync fully transferred our data without errors.</p>
-<p><img src="/images/3.2/Untitled%2012.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.2/Untitled%2012.png" alt="Untitled"></p>
 <p>In this module you successfully activated the File Gateway and created an NFS file share on the gateway. You then mounted the share on the Application server and verified that the files from the on-premises NFS server were copied correctly to the S3 bucket.</p>
 
 
@@ -909,19 +909,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1712763811"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/learn.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/learn.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1712763811"></script>
 
-    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1712763396" rel="stylesheet" />
-    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1712763396"></script>
+    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1712763811" rel="stylesheet" />
+    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1712763811"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

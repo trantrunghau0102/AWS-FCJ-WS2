@@ -12,21 +12,21 @@
     <title>Onpremises file copy to S3 using DataSync :: AWS System Manager</title>
 
     
-    <link href="/AWS-FCJ-WS2/css/nucleus.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hybrid.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/theme.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1712763396" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/nucleus.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hybrid.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1712763811" rel="stylesheet">
     
-    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1712763396" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1712763811" rel="stylesheet">
     
     
 
-    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1712763811"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1712763396"></script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1712763396"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1712763811"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1712763811"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/trantrunghau0102.github.io\/AWS-FCJ-WS2\/";
+        var baseurl = "https:\/\/trantrunghau0102.github.io\/AWS-FCJ-WS2";
     
 </script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1712763396"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1712763811"></script>
 
     
   </div>
@@ -597,7 +597,7 @@ pre : &quot; <!-- raw HTML omitted --> 3.1. <!-- raw HTML omitted --> &quot;</a>
 <li>Click the <strong>Transfer data</strong> button.</li>
 <li>On the left hand column click on <strong>Agents</strong> then click on <strong>Create agent</strong> button.</li>
 </ul>
-<p><img src="/images/3.1/Untitled.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled.png" alt="Untitled"></p>
 <p>In tab <strong>Create agent</strong></p>
 <ul>
 <li>Leave the Deploy agent by default. The agent has already been deployed to an instance in the on-premises (us-west-2) region.</li>
@@ -605,9 +605,9 @@ pre : &quot; <!-- raw HTML omitted --> 3.1. <!-- raw HTML omitted --> &quot;</a>
 <li>Under the <strong>Activation key</strong> section, enter the <strong>Public IP address of the DataSync agent instance</strong> running in the on-premises region.</li>
 <li>Click <strong>Get key</strong>.</li>
 </ul>
-<p><img src="/images/3.1/Untitled%201.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%201.png" alt="Untitled"></p>
 <p>Leave defaults and click <strong>Create agent</strong>. Copy the agent-id to your favorite text editor.</p>
-<p><img src="/images/3.1/Untitled%202.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%202.png" alt="Untitled"></p>
 <h2 id="create-an-nfs-location">Create an NFS Location</h2>
 <p>On the left-hand side of the DataSync service page, click <strong>Locations</strong>  &gt; <strong>Create location</strong>.</p>
 <ul>
@@ -617,8 +617,8 @@ pre : &quot; <!-- raw HTML omitted --> 3.1. <!-- raw HTML omitted --> &quot;</a>
 <li>Under <strong>Mount path</strong> enter <strong>/media/data</strong>.</li>
 <li>Click <strong>Create location</strong>.</li>
 </ul>
-<p><img src="/images/3.1/Untitled%203.png" alt="Untitled"></p>
-<p><img src="/images/3.1/Untitled%204.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%203.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%204.png" alt="Untitled"></p>
 <h2 id="create-an-s3-location">Create an S3 Location</h2>
 <p>On the left-hand side of the DataSync service page, click <strong>Locations</strong>.</p>
 <p>Click <strong>Create location</strong>.</p>
@@ -628,10 +628,10 @@ pre : &quot; <!-- raw HTML omitted --> 3.1. <!-- raw HTML omitted --> &quot;</a>
 <li>Leave <strong>S3 storage class</strong> set to <strong>Standard</strong>.</li>
 <li>Under <strong>Folder</strong>, enter <strong>/</strong>. This will copy all files to the top-level bucket.</li>
 </ul>
-<p><img src="/images/3.1/Untitled%205.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%205.png" alt="Untitled"></p>
 <p>Click <strong>Create location</strong>.</p>
 <p>Click <strong>Locations</strong> on the left side of the page. You should have two locations, one for the NFS server and one for the S3 bucket.</p>
-<p><img src="/images/3.1/Untitled%206.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%206.png" alt="Untitled"></p>
 <h2 id="create-a-task">Create a task</h2>
 <p>On the left-hand side of the DataSync service page, click on <strong>Tasks</strong> &gt; <strong>Create task</strong></p>
 <p>In Step 1 - Configure source location</p>
@@ -640,16 +640,16 @@ pre : &quot; <!-- raw HTML omitted --> 3.1. <!-- raw HTML omitted --> &quot;</a>
 <li>Under <strong>Choose existing location</strong> select the NFS server location we created earlier. Your screen should look similar to the following.</li>
 <li>Click <strong>Next.</strong></li>
 </ul>
-<p><img src="/images/3.1/Untitled%207.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%207.png" alt="Untitled"></p>
 <p>In Step 2 - Configure destination location</p>
 <ul>
 <li>Under <strong>Destination location options</strong> select <strong>Choose an existing location</strong>.</li>
 <li>Under Choose existing location select the S3 location we created earlier. Your screen should look similar to the following.</li>
 <li>Click <strong>Next</strong>.</li>
 </ul>
-<p><img src="/images/3.1/Untitled%208.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%208.png" alt="Untitled"></p>
 <p>On the bottom of the <strong>Configure settings</strong> page click <strong>Autogenerate</strong> to autogenerate a CloudWatch log group. Leave everything else default. Click <strong>Next</strong>.</p>
-<p><img src="/images/3.1/Untitled%209.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%209.png" alt="Untitled"></p>
 <p>On the <strong>Review</strong> page leave all the defaults and click <strong>Create task</strong>.</p>
 <hr>
 <h2 id="pre---b-31-b-">title : &ldquo;Onpremises file copy to S3 using DataSync&rdquo;
@@ -660,20 +660,20 @@ pre : &quot; <!-- raw HTML omitted --> 3.1. <!-- raw HTML omitted --> &quot;</h2
 <h2 id="run-the-task">Run the task</h2>
 <p>Ensure the <strong>Task status</strong> is <strong>available</strong>. It may take a few minutes.</p>
 <p>Click <strong>Start</strong>, leave the default settings, and click <strong>Start</strong>. The Task status will change to running.</p>
-<p><img src="/images/3.1/Untitled%2010.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%2010.png" alt="Untitled"></p>
 <p>As the task runs, the execution status will progress from &ldquo;Launching&rdquo; to &ldquo;Preparing&rdquo; to &ldquo;Transferring&rdquo; to &ldquo;Verifying&rdquo; and finally to &ldquo;Success&rdquo;.</p>
 
 <div class="notices info" ><p>The transfer will take a few minutes. Transferring may be at 0% and then finish immediately. This is because once the task starts, there is only a small amount of data transferred.</p>
 </div>
 
 <p>Once complete the <strong>Execution status</strong> changes to <strong>success</strong>. You can see that we transferred 202 files. This is for 200 files in the data set and the two folders in the data path.</p>
-<p><img src="/images/3.1/Untitled%2011.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%2011.png" alt="Untitled"></p>
 <h2 id="validate-the-data-transfer">Validate the data transfer</h2>
 <p>Go to <strong><a href="https://console.aws.amazon.com/s3">S3 service management console</a></strong></p>
 <p>Select the <strong>sid-datasync-xxxxxxx</strong> bucket.</p>
-<p><img src="/images/3.1/Untitled%2012.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%2012.png" alt="Untitled"></p>
 <p>Click the <strong>images</strong> folder. You will see the 200 objects you migrated from the on-premises NFS server.</p>
-<p><img src="/images/3.1/Untitled%2013.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.1/Untitled%2013.png" alt="Untitled"></p>
 <p>In this module you successfully activated the DataSync agents and created a task to copy files from the on-premises NFS server into the S3 bucket. You then verified that the files were copied successfully.</p>
 
 
@@ -920,19 +920,19 @@ pre : &quot; <!-- raw HTML omitted --> 3.1. <!-- raw HTML omitted --> &quot;</h2
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1712763811"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/learn.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/learn.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1712763811"></script>
 
-    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1712763396" rel="stylesheet" />
-    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1712763396"></script>
+    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1712763811" rel="stylesheet" />
+    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1712763811"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

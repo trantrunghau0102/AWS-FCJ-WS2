@@ -12,21 +12,21 @@
     <title>Incremental Copy Cutover :: AWS System Manager</title>
 
     
-    <link href="/AWS-FCJ-WS2/css/nucleus.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hybrid.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/theme.css?1712763396" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1712763396" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/nucleus.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hybrid.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme.css?1712763811" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1712763811" rel="stylesheet">
     
-    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1712763396" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1712763811" rel="stylesheet">
     
     
 
-    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1712763811"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1712763396"></script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1712763396"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1712763811"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1712763811"></script>
 <script type="text/javascript">
     
-        var baseurl = "https:\/\/trantrunghau0102.github.io\/AWS-FCJ-WS2\/\/vi";
+        var baseurl = "https:\/\/trantrunghau0102.github.io\/AWS-FCJ-WS2\/vi";
     
 </script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1712763396"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1712763811"></script>
 
     
   </div>
@@ -591,22 +591,22 @@
 <h3 id="1-tạo-một-file-mới-trên-máy-chủ-nfs-create-a-new-file-on-the-nfs-server">1. Tạo một file mới trên máy chủ NFS (Create a new file on the NFS server)</h3>
 <p>Kết nối với <strong>SID-appserver</strong> qua <strong>EC2 Instance Connect</strong> (Kết nối Instance EC2)</p>
 <p>Trong <strong>CLI</strong> (Giao diện Dòng lệnh), chạy lệnh sau.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">cp</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">data</span><span style="color:#f92672">/</span><span style="color:#a6e22e">images</span><span style="color:#f92672">/</span><span style="color:#ae81ff">00001.</span><span style="color:#a6e22e">jpg</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">data</span><span style="color:#f92672">/</span><span style="color:#66d9ef">new</span><span style="color:#f92672">-</span><span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">jpg</span>
-</code></pre></div><p><img src="/images/3.3/Untitled.png" alt="Untitled"></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">sudo</span> <span style="color:#a6e22e">cp</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">data</span><span style="color:#f92672">/</span><span style="color:#a6e22e">AWS</span><span style="color:#f92672">-</span><span style="color:#a6e22e">FCJ</span><span style="color:#f92672">-</span><span style="color:#a6e22e">WS2</span><span style="color:#f92672">/</span><span style="color:#a6e22e">images</span><span style="color:#f92672">/</span><span style="color:#ae81ff">00001.</span><span style="color:#a6e22e">jpg</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">data</span><span style="color:#f92672">/</span><span style="color:#66d9ef">new</span><span style="color:#f92672">-</span><span style="color:#a6e22e">image</span>.<span style="color:#a6e22e">jpg</span>
+</code></pre></div><p><img src="/AWS-FCJ-WS2/images/3.3/Untitled.png" alt="Untitled"></p>
 <h3 id="2-sao-chép-file-mới-lên-s3-bucket-copy-the-new-file-to-the-s3-bucket">2. Sao chép file mới lên S3 bucket (Copy the new file to the S3 bucket)</h3>
 <p>Bạn đã tạo tác vụ DataSync để sao chép các file từ máy chủ NFS lên S3 bucket. Để sao chép file mới, bạn chỉ cần chạy lại tác vụ. DataSync sẽ chỉ sao chép các file đã thay đổi giữa nguồn và đích.</p>
 <p>Đảm bảo bạn đang ở trong môi trường <strong>Vùng In-cloud (us-east-1)</strong>.</p>
 <p>Từ AWS console, nhấp vào <strong>Services</strong> (Dịch vụ) và chọn <strong>DataSync</strong> (DataSync).</p>
 <p>Chọn tác vụ bạn đã tạo trước đó và nhấp vào nút <strong>Start</strong> (Bắt đầu) rồi <strong>Start with defaults</strong> (Bắt đầu với mặc định).</p>
-<p><img src="/images/3.3/Untitled%201.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%201.png" alt="Untitled"></p>
 <p>Click vào tab <strong>Task history</strong> (Lịch sử tác vụ) để theo dõi tiến trình.</p>
-<p><img src="/images/3.3/Untitled%202.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%202.png" alt="Untitled"></p>
 <p>Click vào tác vụ mới nhất để xem tiến trình tác vụ. Sẽ mất vài phút để tác vụ hoàn thành.</p>
-<p><img src="/images/3.3/Untitled%203.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%203.png" alt="Untitled"></p>
 <h3 id="3-kiểm-tra-truyền-dữ-liệu-lên-s3-validate-the-data-transfer-to-s3">3. Kiểm tra truyền dữ liệu lên S3 (Validate the data transfer to S3)</h3>
 <p>Vẫn ở vùng In-cloud (us-east-1), nhấp vào Dịch vụ và chọn S3.</p>
 <p>Chọn bucket <strong>sid-datasync-xxxxxxx</strong>.</p>
-<p><img src="/images/3.3/Untitled%204.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%204.png" alt="Untitled"></p>
 
 <div class="notices info" ><p>Bây giờ bạn sẽ thấy file <strong>new-image.jpg</strong> που bạn đã tạo trước đó.</p>
 </div>
@@ -616,14 +616,14 @@
 <p>Kết nối với <strong>SID-appserver</strong> qua <strong>EC2 Instance Connect</strong> (Kết nối Instance EC2)</p>
 <p>Trong <strong>CLI</strong> (Giao diện Dòng lệnh), chạy lệnh sau.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">ls</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">data</span>
-</code></pre></div><p><img src="/images/3.3/Untitled%205.png" alt="Untitled"></p>
+</code></pre></div><p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%205.png" alt="Untitled"></p>
 
 <div class="notices info" ><p>Bạn có thể thấy hình ảnh tồn tại cục bộ. Bây giờ hãy chạy lệnh sau để xem nó có tồn tại trên File Gateway mà bạn đã tạo hay không.</p>
 </div>
 
 <p>Trong CLI, chạy lệnh sau.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">ls</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">fgw</span>
-</code></pre></div><p><img src="/images/3.3/Untitled%206.png" alt="Untitled"></p>
+</code></pre></div><p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%206.png" alt="Untitled"></p>
 
 <div class="notices info" ><p>Lưu ý rằng hình ảnh không có ở đó. Bạn đã sao chép file từ máy chủ NFS lên S3 bằng DataSync và File Gateway được kết nối với bucket S3. Vậy chuyện gì đang xảy ra? Tại sao bạn không thể thấy file trên Share File Gateway trên Application Server?</p>
 </div>
@@ -634,11 +634,11 @@
 <p>Từ AWS console, nhấp vào <strong>Services</strong> (Dịch vụ) và chọn <strong>Storage Gateway</strong> (Storage Gateway).</p>
 <p>Click vào <strong>File shares</strong> (Các File Share)</p>
 <p>Click vào ô checkbox cho File Share bạn đã tạo trước đó. Trên menu thả xuống <strong>Actions</strong> (Hành động) chọn <strong>Refresh cache</strong> (Refresh Cache) và nhấp vào <strong>Start</strong> (Bắt đầu).</p>
-<p><img src="/images/3.3/Untitled%207.png" alt="Untitled"></p>
+<p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%207.png" alt="Untitled"></p>
 <p>Trở lại môi trường On-premises (us-west-2).</p>
 <p>Trong phiên SSH của bạn, chạy lệnh sau.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-jsx" data-lang="jsx"><span style="color:#a6e22e">ls</span> <span style="color:#f92672">/</span><span style="color:#a6e22e">mnt</span><span style="color:#f92672">/</span><span style="color:#a6e22e">fgw</span>
-</code></pre></div><p><img src="/images/3.3/Untitled%208.png" alt="Untitled"></p>
+</code></pre></div><p><img src="/AWS-FCJ-WS2/images/3.3/Untitled%208.png" alt="Untitled"></p>
 
 <div class="notices info" ><p>Bây giờ bạn sẽ thấy <strong>new-image.jpg</strong> mà chúng tôi đã tạo trước đó.</p>
 </div>
@@ -892,19 +892,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1712763811"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/learn.js?1712763396"></script>
-    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1712763396"></script>
+    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/learn.js?1712763811"></script>
+    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1712763811"></script>
 
-    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1712763396" rel="stylesheet" />
-    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1712763396"></script>
+    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1712763811" rel="stylesheet" />
+    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1712763811"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
