@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="js csstransforms3d">
+<html lang="vi" class="js csstransforms3d">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,26 +7,26 @@
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
-    <link rel="icon" href="../../images/favicon.png" type="image/png">
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
 
-    <title>Deploy CloudFormation template  :: AWS System Manager</title>
+    <title>Sao chép dữ liệu on-premises lên S3 bằng DataSync :: AWS System Manager</title>
 
     
-    <link href="../../css/nucleus.css?1712753602" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1712753602" rel="stylesheet">
-    <link href="../../css/hybrid.css?1712753602" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1712753602" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1712753602" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1712753602" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1712753602" rel="stylesheet">
-    <link href="../../css/theme.css?1712753602" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1712753602" rel="stylesheet">
+    <link href="../../../css/nucleus.css?1712753602" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1712753602" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1712753602" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1712753602" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1712753602" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1712753602" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1712753602" rel="stylesheet">
+    <link href="../../../css/theme.css?1712753602" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1712753602" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1712753602" rel="stylesheet">
+    <link href="../../../css/theme-workshop.css?1712753602" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1712753602"></script>
+    <script src="../../../js/jquery-3.3.1.min.js?1712753602"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -36,14 +36,14 @@
     </style>
     
   </head>
-  <body class="" data-url="../../2-prerequiste/2.2-deploy-cloudformation-template/">
+  <body class="" data-url="../../../vi/3-data-migration/3.1-copy-to-s3/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
 
   <div id="header-wrapper">
     <div id="header">
-      <a id="logo" href="../../">
+      <a id="logo" href="../../../">
 
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30" width="30%"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg>
 
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1712753602"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1712753602"></script>
+<script type="text/javascript" src="../../../js/lunr.min.js?1712753602"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1712753602"></script>
 <script type="text/javascript">
     
-        var baseurl = "";
+        var baseurl = "\/vi";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1712753602"></script>
+<script type="text/javascript" src="../../../js/search.js?1712753602"></script>
 
     
   </div>
@@ -82,13 +82,13 @@
  
   
     
-    <li data-nav-id="/1-introduce/" title="Introduction" class="dd-item 
+    <li data-nav-id="/vi/1-introduce/" title="Giới thiệu" class="dd-item 
         
         
         
         ">
-      <a href="../../1-introduce/">
-           <b> 1. </b> Introduction
+      <a href="../../../vi/1-introduce/">
+          <b> 1. </b>Giới thiệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -108,13 +108,13 @@
  
   
     
-    <li data-nav-id="/2-prerequiste/" title="Preparation " class="dd-item 
-        parent
+    <li data-nav-id="/vi/2-prerequiste/" title="Chuẩn bị" class="dd-item 
+        
         
         
         ">
-      <a href="../../2-prerequiste/">
-           <b> 2. </b> Preparation 
+      <a href="../../../vi/2-prerequiste/">
+          2. Chuẩn bị
           
             <i class="fas fa-check read-icon"></i>
           
@@ -139,13 +139,13 @@
  
   
     
-    <li data-nav-id="/2-prerequiste/2.1-create-s3/" title="Create S3 " class="dd-item 
+    <li data-nav-id="/vi/2-prerequiste/2.1-create-s3/" title="Tạo S3 Bucket" class="dd-item 
         
         
         
         ">
-      <a href="../../2-prerequiste/2.1-create-s3/">
-           <b> 2.1 </b> Create S3 
+      <a href="../../../vi/2-prerequiste/2.1-create-s3/">
+          2.1 Tạo S3 Bucket
           
             <i class="fas fa-check read-icon"></i>
           
@@ -167,13 +167,13 @@
  
   
     
-    <li data-nav-id="/2-prerequiste/2.2-deploy-cloudformation-template/" title="Deploy CloudFormation template " class="dd-item 
-        parent
-        active
+    <li data-nav-id="/vi/2-prerequiste/2.2-deploy-cloudformation-template/" title="Triển khai mẫu CloudFormation" class="dd-item 
+        
+        
         
         ">
-      <a href="../../2-prerequiste/2.2-deploy-cloudformation-template/">
-           <b> 2.2 </b> Deploy CloudFormation template 
+      <a href="../../../vi/2-prerequiste/2.2-deploy-cloudformation-template/">
+          2.2 Triển khai mẫu CloudFormation
           
             <i class="fas fa-check read-icon"></i>
           
@@ -195,13 +195,13 @@
  
   
     
-    <li data-nav-id="/2-prerequiste/2.3-edit-sg/" title="Edit Security group " class="dd-item 
+    <li data-nav-id="/vi/2-prerequiste/2.3-edit-sg/" title="Chỉnh sửa Security Group" class="dd-item 
         
         
         
         ">
-      <a href="../../2-prerequiste/2.3-edit-sg/">
-           <b> 2.3 </b> Edit Security group 
+      <a href="../../../vi/2-prerequiste/2.3-edit-sg/">
+          2.3 Chỉnh sửa Security Group
           
             <i class="fas fa-check read-icon"></i>
           
@@ -230,13 +230,13 @@
  
   
     
-    <li data-nav-id="/3-data-migration/" title="Data migration" class="dd-item 
-        
+    <li data-nav-id="/vi/3-data-migration/" title="Di chuyển dữ liệu" class="dd-item 
+        parent
         
         
         ">
-      <a href="../../3-data-migration/">
-           <b> 3. </b> Data migration
+      <a href="../../../vi/3-data-migration/">
+          3. Di chuyển dữ liệu
           
             <i class="fas fa-check read-icon"></i>
           
@@ -261,13 +261,13 @@
  
   
     
-    <li data-nav-id="/3-data-migration/3.1-copy-to-s3/" title="Onpremises file copy to S3 using DataSync" class="dd-item 
-        
-        
+    <li data-nav-id="/vi/3-data-migration/3.1-copy-to-s3/" title="Sao chép dữ liệu on-premises lên S3 bằng DataSync" class="dd-item 
+        parent
+        active
         
         ">
-      <a href="../../3-data-migration/3.1-copy-to-s3/">
-           <b> 3.1. </b> Onpremises file copy to S3 using DataSync
+      <a href="../../../vi/3-data-migration/3.1-copy-to-s3/">
+          3.1. Sao chép dữ liệu on-premises lên S3 bằng DataSync
           
             <i class="fas fa-check read-icon"></i>
           
@@ -289,13 +289,13 @@
  
   
     
-    <li data-nav-id="/3-data-migration/3.2-file-gateway/" title="Acces S3 bucket from on-premises using File Gateway" class="dd-item 
+    <li data-nav-id="/vi/3-data-migration/3.2-file-gateway/" title="Truy cập S3 bucket on-premises sử dụng File Gateway" class="dd-item 
         
         
         
         ">
-      <a href="../../3-data-migration/3.2-file-gateway/">
-           <b> 3.2. </b> Acces S3 bucket from on-premises using File Gateway
+      <a href="../../../vi/3-data-migration/3.2-file-gateway/">
+           <b> 3.2. </b> Truy cập S3 bucket on-premises sử dụng File Gateway
           
             <i class="fas fa-check read-icon"></i>
           
@@ -317,12 +317,12 @@
  
   
     
-    <li data-nav-id="/3-data-migration/3.3-cutover/" title="Incremental Copy Cutover" class="dd-item 
+    <li data-nav-id="/vi/3-data-migration/3.3-cutover/" title="Incremental Copy Cutover" class="dd-item 
         
         
         
         ">
-      <a href="../../3-data-migration/3.3-cutover/">
+      <a href="../../../vi/3-data-migration/3.3-cutover/">
            <b> 3.3. </b> Incremental Copy Cutover
           
             <i class="fas fa-check read-icon"></i>
@@ -345,12 +345,12 @@
  
   
     
-    <li data-nav-id="/3-data-migration/3.4-optimize/" title="Optimize Copy Operations" class="dd-item 
+    <li data-nav-id="/vi/3-data-migration/3.4-optimize/" title="Optimize Copy Operations" class="dd-item 
         
         
         
         ">
-      <a href="../../3-data-migration/3.4-optimize/">
+      <a href="../../../vi/3-data-migration/3.4-optimize/">
            <b> 3.4. </b> Optimize Copy Operations
           
             <i class="fas fa-check read-icon"></i>
@@ -380,13 +380,13 @@
  
   
     
-    <li data-nav-id="/4-cleanup/" title="Clean Up Resources" class="dd-item 
+    <li data-nav-id="/vi/4-cleanup/" title="Dọn dẹp tài nguyên" class="dd-item 
         
         
         
         ">
-      <a href="../../4-cleanup/">
-           <b> 4. </b> Clean Up Resources
+      <a href="../../../vi/4-cleanup/">
+           <b> 4. </b> Dọn dẹp tài nguyên
           
             <i class="fas fa-check read-icon"></i>
           
@@ -433,7 +433,7 @@
                   
                     
                     
-                      <option id="en" value="/2-prerequiste/2.2-deploy-cloudformation-template/" selected>English</option>
+                      <option id="en" value="/3-data-migration/3.1-copy-to-s3/">English</option>
                     
                   
               
@@ -447,7 +447,7 @@
                   
                     
                     
-                      <option id="vi" value="/vi/2-prerequiste/2.2-deploy-cloudformation-template/">Tiếng Việt</option>
+                      <option id="vi" value="/vi/3-data-migration/3.1-copy-to-s3/" selected>Tiếng Việt</option>
                     
                   
               
@@ -539,7 +539,7 @@
             
           
           
-            <a href='../../'>AWS DataSync</a> > <a href='../../2-prerequiste/'>Preparation </a> > Deploy CloudFormation template 
+            <a href='../../../vi/'>AWS System Manager</a> > <a href='../../../vi/3-data-migration/'>Di chuyển dữ liệu</a> > Sao chép dữ liệu on-premises lên S3 bằng DataSync
           
         
           
@@ -554,12 +554,12 @@
     <div class="wrapper">
 <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#deploy-on-premise-simulation">Deploy On-premise simulation</a></li>
-        <li><a href="#deploy-aws-environment">Deploy AWS Environment</a></li>
-      </ul>
-    </li>
+    <li><a href="#kích-hoạt-datasync-agent">Kích hoạt DataSync Agent</a></li>
+    <li><a href="#tạo-vị-trí-nfs-nfs-location">Tạo Vị trí NFS (NFS Location)</a></li>
+    <li><a href="#tạo-vị-trí-s3-s3-location">Tạo Vị trí S3 (S3 Location)</a></li>
+    <li><a href="#tạo-tác-vụ-task">Tạo tác vụ (Task)</a></li>
+    <li><a href="#chạy-tác-vụ-run-the-task">Chạy tác vụ (Run the task)</a></li>
+    <li><a href="#xác-minh-quá-trình-truyền-dữ-liệu-validate-the-data-transfer">Xác minh quá trình truyền dữ liệu (Validate the data transfer)</a></li>
   </ul>
 </nav>
     </div>
@@ -577,7 +577,7 @@
           
             <h1>
               
-              Deploy CloudFormation template 
+              Sao chép dữ liệu on-premises lên S3 bằng DataSync
             </h1>
           
 
@@ -585,56 +585,85 @@
 
 
 
-	<p>For the <strong>Migrating Data to AWS</strong> lab we will need to simulate an on-premise and an in-cloud environment. To do this, we will use two separate regions, us-west-2 (on-premises) and us-east-1 (AWS Cloud). You would deploy the necessary resources for the <strong>On-premises</strong> environment in us-west-2 and an additional template in us-east-1 for the <strong>In-cloud</strong> environment in AWS.</p>
-<h3 id="deploy-on-premise-simulation">Deploy On-premise simulation</h3>
-<p>Go to <a href="https://us-west-2.console.aws.amazon.com/cloudformation">Cloudformation service management console</a>. Ensure you are in us-west-2 (Oregon).</p>
+	<h2 id="kích-hoạt-datasync-agent">Kích hoạt DataSync Agent</h2>
+<p>Mặc dù instance (thể hiện) của agent đã được CloudFormation tạo, nhưng trước khi sử dụng được, nó cần được kích hoạt trong vùng in-cloud (trên nền tảng đám mây). Đảm bảo bạn đang ở vùng <strong>us-east-1</strong> (N.Virginia). Thực hiện theo các bước dưới đây để kích hoạt agent.</p>
+<p>Từ bảng điều khiển AWS, nhấp vào <strong>Services</strong> (Dịch vụ) và chọn <strong>DataSync</strong> (DataSync)</p>
 <ul>
-<li>Click Create stack.</li>
-<li>Enter the following in the <strong>Amazon S3 URL</strong> field, replacing <strong>{AssetsBucketName}</strong> with the name of the Amazon S3 bucket you uploaded your templates to. Then click the <strong>Next</strong> button.</li>
+<li>Nhấp vào nút <strong>Transfer data</strong> (Truyền dữ liệu).</li>
+<li>Ở cột bên trái, nhấp vào <strong>Agents</strong> sau đó nhấp vào nút <strong>Create agent</strong> (Tạo agent).</li>
 </ul>
-<p><code>https://s3.amazonaws.com/${AssetsBucketName}/assets/sid-base-template.yaml</code></p>
-<p><img src="../../images/2.2/Untitled.png" alt="Untitled"></p>
-<p>Enter <strong>SID</strong> as the <strong>Stack name.</strong></p>
+<p><img src="../../../images/3.1/Untitled.png" alt="Untitled"></p>
+<p>Trong tab <strong>Create agent</strong> (Tạo agent)</p>
 <ul>
-<li>Under <strong>Parameters</strong> you will see <strong>Lab modules</strong>. Choose <strong>true</strong> in the <strong>Deploy Data Migration Lab</strong>. Leave the other lab as <strong>false</strong>.</li>
-<li>For the <strong>S3 bucket with CloudFormation templates</strong> parameter, enter the S3 bucket where you uploaded the templates.</li>
-<li>For the <strong>Prefix to CloudFormation templates</strong> parameter, leave the default value of <strong>assets</strong>.</li>
+<li>Giữ mặc định <strong>Deploy agent</strong> (Triển khai agent). Agent đã được triển khai tới một instance (thể hiện) trong vùng on-premises (us-west-2).</li>
+<li><strong>Service endpoint</strong> (Điểm cuối dịch vụ) nên được đặt thành <strong>Public service endpoints in US East (N. Virgina)</strong> (Điểm cuối dịch vụ công khai ở US East (N. Virginia)).</li>
+<li>Trong phần <strong>Activation key</strong> (Khóa kích hoạt), nhập <strong>Public IP address</strong> (Địa chỉ IP công khai) của <strong>DataSync agent instance</strong> (Thể hiện instance của agent DataSync) chạy trong vùng on-premises.</li>
+<li>Nhấp vào <strong>Get key</strong> (Lấy khóa).</li>
 </ul>
-<p>Click <strong>Next.</strong></p>
-<p><img src="../../images/2.2/Untitled%201.png" alt="Untitled"></p>
-<p>Accepts the defaults on the <strong>Configure stack options</strong> page and click <strong>Next</strong>.</p>
-<p>Scroll to the bottom of the <strong>Review</strong> pages. In the <strong>Capabilties</strong> section, select the check boxes at the bottom of the page, acknowledging CloudFormation will create the necessary IAM resources. Click <strong>Submit</strong> to begin stack creation.</p>
-<p><img src="../../images/2.2/Untitled%202.png" alt="Untitled"></p>
-<p>It will take between 20-30 minutes for the template to deploy depending on which lab(s) you selected. If you selected all four labs, your screen will look similar to the following.</p>
-<p>When deployment complete, check the outputs.</p>
-<p><img src="../../images/2.2/Untitled%203.png" alt="Untitled"></p>
+<p><img src="../../../images/3.1/Untitled%201.png" alt="Untitled"></p>
+<p>Giữ mặc định và nhấp vào <strong>Create agent</strong> (Tạo agent). Sao chép <strong>agent-id</strong> vào trình soạn thảo văn bản yêu thích của bạn.</p>
+<p><img src="../../../images/3.1/Untitled%202.png" alt="Untitled"></p>
+<h2 id="tạo-vị-trí-nfs-nfs-location">Tạo Vị trí NFS (NFS Location)</h2>
+<p>Ở phía bên trái của trang dịch vụ DataSync, nhấp vào <strong>Locations</strong> (Vị trí) &gt; <strong>Create location</strong> (Tạo vị trí).</p>
 <ul>
-<li><strong>AppServerPrivateIP</strong> – This is the private IP address of the Application Server. You will use this when creating the File Gateway file share to limit access to the NFS export.</li>
-<li><strong>DataSyncAgentPublicIP</strong> – This is the public IP address of the EC2 instance running the DataSync agent. You will use this when activating the DataSync agent.</li>
-<li><strong>FileGatewayPublicIP</strong> – This is the public IP address of the EC2 instance running the File Gateway. You will use this when activating the File Gateway.</li>
-<li><strong>NfsServerPrivateIP</strong> – This is the private IP address of the NFS server. You will use this both on the Application Server and when creating a location for DataSync.</li>
+<li>Từ menu dropdown <strong>Location type</strong> (Loại vị trí), chọn <strong>Network File System (NFS)</strong> (Hệ thống file mạng (NFS)).</li>
+<li>Từ menu dropdown <strong>Agents</strong> chọn agent mà chúng ta vừa tạo.</li>
+<li>Trong ô <strong>NFS Server</strong> (Máy chủ NFS), nhập <strong>địa chỉ IP riêng</strong> của Máy chủ NFS.</li>
+<li>Trong <strong>Mount path</strong> (Đường dẫn mount) nhập <strong>/media/data</strong>.</li>
+<li>Nhấp vào <strong>Create location</strong> (Tạo vị trí).</li>
 </ul>
-<p>Copy all four Outputs into your favorite text editor. You will need them to complete this lab.</p>
-<h3 id="deploy-aws-environment">Deploy AWS Environment</h3>
-<p>Go to <a href="https://us-west-2.console.aws.amazon.com/cloudformation">Cloudformation service management console</a>. Ensure you are in us-west-2 (Oregon).</p>
+<p><img src="../../../images/3.1/Untitled%203.png" alt="Untitled"></p>
+<p><img src="../../../images/3.1/Untitled%204.png" alt="Untitled"></p>
+<h2 id="tạo-vị-trí-s3-s3-location">Tạo Vị trí S3 (S3 Location)</h2>
+<p>Ở phía bên trái của trang dịch vụ DataSync, nhấp vào <strong>Locations</strong> (Vị trí).</p>
+<p>Nhấp vào <strong>Create location</strong> (Tạo vị trí).</p>
 <ul>
-<li>Click <strong>Create stack</strong>.</li>
-<li>Enter the following in the <strong>Amazon S3 URL</strong> field, replacing <strong>${AssetsBucketName}</strong> with the name of the Amazon S3 bucket you uploaded your templates to. Then click the <strong>Next</strong> button.</li>
+<li>Từ menu dropdown <strong>Location type</strong> (Loại vị trí) chọn <strong>Amazon S3 Bucket</strong> (Bucket S3 của Amazon).</li>
+<li>Từ menu dropdown <strong>S3 bucket</strong> (Bucket S3) chọn bucket <strong>sid-datasync-xxxxxxx</strong>.</li>
+<li>Giữ mặc định <strong>S3 storage class</strong> (Lớp lưu trữ S3) thành <strong>Standard</strong> (Tiêu chuẩn).</li>
+<li>Trong <strong>Folder</strong> (Thư mục), nhập <strong>/</strong>. Thao tác này sẽ sao chép tất cả các file vào bucket cấp cao nhất.</li>
 </ul>
-<p><strong><a href="https://s3.amazonaws.com/$%7BAssetsBucketName%7D/assets/sid-datamigration-cloud.yaml">https://s3.amazonaws.com/${AssetsBucketName}/assets/sid-datamigration-cloud.yaml</a></strong></p>
-<p><img src="../../images/2.2/Untitled%204.png" alt="Untitled"></p>
-<p>On the <strong>Specify stack details</strong> page, enter <strong>SID-DS</strong> for the <strong>Stack name</strong> and click <strong>Next</strong>.</p>
-<p><img src="../../images/2.2/Untitled%205.png" alt="Untitled"></p>
-<p>On the <strong>Configure stack options</strong> page, leave the defaults and click <strong>Next</strong>.</p>
-<p>On the <strong>Review</strong> page, confirm your selections and select the check boxes at the bottom of the page, acknowledging CloudFormation will create the necessary IAM resources. Click <strong>Submit.</strong></p>
-<p><img src="../../images/2.2/Untitled%206.png" alt="Untitled"></p>
-<p>When deployment complete, check the outputs.</p>
-<p><img src="../../images/2.2/Untitled%207.png" alt="Untitled"></p>
+<p><img src="../../../images/3.1/Untitled%5.png" alt="Untitled"></p>
+<p>Nhấp vào <strong>Create location</strong> (Tạo vị trí).</p>
+<p>Nhấp vào <strong>Locations</strong> (Vị trí) ở phía bên trái của trang. Bạn sẽ có hai vị trí, một cho máy chủ NFS và một cho bucket S3.</p>
+<p><img src="../../../images/3.1/Untitled%206.png" alt="Untitled"></p>
+<h2 id="tạo-tác-vụ-task">Tạo tác vụ (Task)</h2>
+<p>Ở phía bên trái của trang dịch vụ DataSync, nhấp vào <strong>Tasks</strong> (Tác vụ) &gt; <strong>Create task</strong> (Tạo tác vụ)</p>
+<p>Trong <strong>Bước 1 - Cấu hình vị trí nguồn (Source location)</strong></p>
 <ul>
-<li><strong>S3BucketName</strong> – This is the name of the S3 bucket where the data will be copied to. You will use this when creating a file share on the File Gateway.</li>
-<li><strong>BucketRoleForDataSync</strong> – This is the role that will be used by the DataSync agent to write files to the S3 bucket. You will use this when creating the S3 location for DataSync.</li>
+<li>Trong <strong>Source location options</strong> (Tùy chọn vị trí nguồn), chọn <strong>Choose an existing location</strong> (Chọn vị trí hiện có).</li>
+<li>Trong <strong>Choose existing location</strong> (Chọn vị trí hiện có), chọn vị trí máy chủ NFS mà chúng ta đã tạo trước đó. Màn hình của bạn sẽ trông tương tự như hình sau.</li>
+<li>Nhấp vào <strong>Next</strong> (Tiếp theo).</li>
 </ul>
-<p>Copy both Outputs into your favorite text editor. You will need them to complete this lab.</p>
+<p><img src="../../../images/3.1/Untitled%207.png" alt="Untitled"></p>
+<p>Trong <strong>Bước 2 - Cấu hình vị trí đích (Destination location)</strong></p>
+<ul>
+<li>Trong <strong>Destination location options</strong> (Tùy chọn vị trí đích), chọn <strong>Choose an existing location</strong> (Chọn vị trí hiện có).</li>
+<li>Trong <strong>Choose existing location</strong> (Chọn vị trí hiện có), chọn vị trí S3 mà chúng ta đã tạo trước đó. Màn hình của bạn sẽ trông tương tự như hình sau.</li>
+<li>Nhấp vào <strong>Next</strong> (Tiếp theo).</li>
+</ul>
+<p><img src="../../../images/3.1/Untitled%208.png" alt="Untitled"></p>
+<p>Ở phía dưới trang <strong>Configure settings</strong> (Cấu hình cài đặt), nhấp vào <strong>Autogenerate</strong> (Tự động tạo) để tự động tạo một nhóm nhật ký CloudWatch. Giữ nguyên các giá trị mặc định khác. Nhấp vào <strong>Next</strong> (Tiếp theo).</p>
+<p><img src="../../../images/3.1/Untitled%209.png" alt="Untitled"></p>
+<p>Trên trang <strong>Review</strong> (Kiểm tra), giữ nguyên tất cả các giá trị mặc định và nhấp vào <strong>Create task</strong> (Tạo tác vụ).</p>
+<h2 id="chạy-tác-vụ-run-the-task">Chạy tác vụ (Run the task)</h2>
+<p>Kiểm tra xem <strong>Task status</strong> (Trạng thái tác vụ) là <strong>available</strong> (có sẵn). Có thể mất vài phút.</p>
+<p>Nhấp vào <strong>Start</strong> (Bắt đầu), giữ nguyên các cài đặt mặc định và nhấp vào <strong>Start</strong> (Bắt đầu). <strong>Task status</strong> (Trạng thái tác vụ) sẽ chuyển sang <strong>running</strong> (chạy).</p>
+<p><img src="../../../images/3.1/Untitled%2010.png" alt="Untitled"></p>
+<p>Khi tác vụ chạy, <strong>Execution status</strong> (Trạng thái thực thi) sẽ chuyển từ &ldquo;Launching&rdquo; (Đang khởi chạy) sang &ldquo;Preparing&rdquo; (Đang chuẩn bị) sang &ldquo;Transferring&rdquo; (Đang truyền) sang &ldquo;Verifying&rdquo; (Đang xác minh) và cuối cùng là &ldquo;Success&rdquo; (Thành công).</p>
+
+<div class="notices info" ><p>Việc truyền dữ liệu sẽ mất vài phút. Tỷ lệ truyền có thể là 0% và sau đó hoàn thành ngay lập tức. Điều này là do khi tác vụ bắt đầu, chỉ có một lượng nhỏ dữ liệu được truyền.</p>
+</div>
+
+<p>Sau khi hoàn thành, <strong>Execution status</strong> (Trạng thái thực thi) sẽ chuyển thành <strong>success</strong> (thành công). Bạn có thể thấy rằng chúng tôi đã di chuyển 202 file. Đây là kết quả cho 200 file trong tập dữ liệu và hai thư mục trong đường dẫn dữ liệu.</p>
+<p><img src="../../../images/3.1/Untitled%2011.png" alt="Untitled"></p>
+<h2 id="xác-minh-quá-trình-truyền-dữ-liệu-validate-the-data-transfer">Xác minh quá trình truyền dữ liệu (Validate the data transfer)</h2>
+<p>Truy cập <strong><a href="https://console.aws.amazon.com/s3">Bảng điều khiển quản lý dịch vụ S3:</a></strong></p>
+<p>Chọn bucket <strong>sid-datasync-xxxxxxx</strong>.</p>
+<p><img src="../../../images/3.1/Untitled%2012.png" alt="Untitled"></p>
+<p>Nhấp vào thư mục <strong>images</strong>. Bạn sẽ thấy 200 objects bạn đã di chuyển từ máy chủ NFS on-premises.</p>
+<p><img src="../../../images/3.1/Untitled%2013.png" alt="Untitled"></p>
+<p>Trong module này, bạn đã kích hoạt thành công các <strong>DataSync agents</strong> và tạo tác vụ để copy files từ máy chủ NFS on-premises vào S3 bucket. Sau đó, bạn đã xác minh rằng các files đã được copy thành công.</p>
 
 
 
@@ -694,80 +723,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                        
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                 
                 
 
@@ -798,6 +753,77 @@
             
             
                 
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
                     
                 
                 
@@ -870,10 +896,10 @@
 	 
 	 
 		
-			<a class="nav nav-prev" href="../../2-prerequiste/2.1-create-s3/" title="Create S3 "> <i class="fa fa-chevron-left"></i></a>
+			<a class="nav nav-prev" href="../../../vi/3-data-migration/" title="Di chuyển dữ liệu"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../2-prerequiste/2.3-edit-sg/" title="Edit Security group " style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../../vi/3-data-migration/3.2-file-gateway/" title="Truy cập S3 bucket on-premises sử dụng File Gateway" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -883,19 +909,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1712753602"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1712753602"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1712753602"></script>
-    <script src="../../js/jquery.sticky.js?1712753602"></script>
-    <script src="../../js/featherlight.min.js?1712753602"></script>
-    <script src="../../js/highlight.pack.js?1712753602"></script>
+    <script src="../../../js/clipboard.min.js?1712753602"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1712753602"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1712753602"></script>
+    <script src="../../../js/jquery.sticky.js?1712753602"></script>
+    <script src="../../../js/featherlight.min.js?1712753602"></script>
+    <script src="../../../js/highlight.pack.js?1712753602"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1712753602"></script>
-    <script src="../../js/learn.js?1712753602"></script>
-    <script src="../../js/hugo-learn.js?1712753602"></script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1712753602"></script>
+    <script src="../../../js/learn.js?1712753602"></script>
+    <script src="../../../js/hugo-learn.js?1712753602"></script>
 
-    <link href="../../mermaid/mermaid.css?1712753602" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1712753602"></script>
+    <link href="../../../mermaid/mermaid.css?1712753602" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1712753602"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

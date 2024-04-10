@@ -15,26 +15,136 @@
                 />
   </url><url>
     <loc>/2-prerequiste/2.1-create-s3/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-prerequiste/2.1-create-s3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-prerequiste/2.1-create-s3/"
+                />
   </url><url>
     <loc>/1-introduce/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/1-introduce/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/1-introduce/"
+                />
   </url><url>
     <loc>/3-data-migration/3.1-copy-to-s3/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-data-migration/3.1-copy-to-s3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-data-migration/3.1-copy-to-s3/"
+                />
   </url><url>
     <loc>/3-data-migration/3.2-file-gateway/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-data-migration/3.2-file-gateway/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-data-migration/3.2-file-gateway/"
+                />
   </url><url>
     <loc>/2-prerequiste/2.2-deploy-cloudformation-template/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-prerequiste/2.2-deploy-cloudformation-template/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-prerequiste/2.2-deploy-cloudformation-template/"
+                />
   </url><url>
     <loc>/2-prerequiste/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-prerequiste/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-prerequiste/"
+                />
   </url><url>
     <loc>/3-data-migration/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-data-migration/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-data-migration/"
+                />
   </url><url>
     <loc>/2-prerequiste/2.3-edit-sg/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/2-prerequiste/2.3-edit-sg/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/2-prerequiste/2.3-edit-sg/"
+                />
   </url><url>
     <loc>/3-data-migration/3.3-cutover/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-data-migration/3.3-cutover/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-data-migration/3.3-cutover/"
+                />
   </url><url>
     <loc>/4-cleanup/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/4-cleanup/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/4-cleanup/"
+                />
   </url><url>
     <loc>/3-data-migration/3.4-optimize/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="/vi/3-data-migration/3.4-optimize/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/3-data-migration/3.4-optimize/"
+                />
   </url><url>
     <loc>/categories/</loc>
     <xhtml:link

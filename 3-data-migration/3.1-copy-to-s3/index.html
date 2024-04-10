@@ -12,21 +12,21 @@
     <title>Onpremises file copy to S3 using DataSync :: AWS System Manager</title>
 
     
-    <link href="../../css/nucleus.css?1712748320" rel="stylesheet">
-    <link href="../../css/fontawesome-all.min.css?1712748320" rel="stylesheet">
-    <link href="../../css/hybrid.css?1712748320" rel="stylesheet">
-    <link href="../../css/featherlight.min.css?1712748320" rel="stylesheet">
-    <link href="../../css/perfect-scrollbar.min.css?1712748320" rel="stylesheet">
-    <link href="../../css/auto-complete.css?1712748320" rel="stylesheet">
-    <link href="../../css/atom-one-dark-reasonable.css?1712748320" rel="stylesheet">
-    <link href="../../css/theme.css?1712748320" rel="stylesheet">
-    <link href="../../css/hugo-theme.css?1712748320" rel="stylesheet">
+    <link href="../../css/nucleus.css?1712753602" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1712753602" rel="stylesheet">
+    <link href="../../css/hybrid.css?1712753602" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1712753602" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1712753602" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1712753602" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1712753602" rel="stylesheet">
+    <link href="../../css/theme.css?1712753602" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1712753602" rel="stylesheet">
     
-    <link href="../../css/theme-workshop.css?1712748320" rel="stylesheet">
+    <link href="../../css/theme-workshop.css?1712753602" rel="stylesheet">
     
     
 
-    <script src="../../js/jquery-3.3.1.min.js?1712748320"></script>
+    <script src="../../js/jquery-3.3.1.min.js?1712753602"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="../../js/lunr.min.js?1712748320"></script>
-<script type="text/javascript" src="../../js/auto-complete.js?1712748320"></script>
+<script type="text/javascript" src="../../js/lunr.min.js?1712753602"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1712753602"></script>
 <script type="text/javascript">
     
         var baseurl = "";
     
 </script>
-<script type="text/javascript" src="../../js/search.js?1712748320"></script>
+<script type="text/javascript" src="../../js/search.js?1712753602"></script>
 
     
   </div>
@@ -289,13 +289,13 @@
  
   
     
-    <li data-nav-id="/3-data-migration/3.2-file-gateway/" title="Acces S3 bucket on-premises using File Gateway" class="dd-item 
+    <li data-nav-id="/3-data-migration/3.2-file-gateway/" title="Acces S3 bucket from on-premises using File Gateway" class="dd-item 
         
         
         
         ">
       <a href="../../3-data-migration/3.2-file-gateway/">
-           <b> 3.2. </b> Acces S3 bucket on-premises using File Gateway
+           <b> 3.2. </b> Acces S3 bucket from on-premises using File Gateway
           
             <i class="fas fa-check read-icon"></i>
           
@@ -440,6 +440,18 @@
                   
               
           
+              
+              
+                  
+              
+                  
+                    
+                    
+                      <option id="vi" value="/vi/3-data-migration/3.1-copy-to-s3/">Tiếng Việt</option>
+                    
+                  
+              
+          
         </select>
         <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           width="255px" height="255px" viewBox="0 0 255 255" style="enable-background:new 0 0 255 255;" xml:space="preserve">
@@ -546,6 +558,11 @@
     <li><a href="#create-an-nfs-location">Create an NFS Location</a></li>
     <li><a href="#create-an-s3-location">Create an S3 Location</a></li>
     <li><a href="#create-a-task">Create a task</a></li>
+    <li><a href="#pre---b-31-b-">title : &ldquo;Onpremises file copy to S3 using DataSync&rdquo;
+date : &ldquo;<strong>r Sys.Date()</strong>&rdquo;
+weight : 1
+chapter : false
+pre : &quot; <!-- raw HTML omitted --> 3.1. <!-- raw HTML omitted --> &quot;</a></li>
     <li><a href="#run-the-task">Run the task</a></li>
     <li><a href="#validate-the-data-transfer">Validate the data transfer</a></li>
   </ul>
@@ -634,6 +651,12 @@
 <p>On the bottom of the <strong>Configure settings</strong> page click <strong>Autogenerate</strong> to autogenerate a CloudWatch log group. Leave everything else default. Click <strong>Next</strong>.</p>
 <p><img src="../../images/3.1/Untitled%209.png" alt="Untitled"></p>
 <p>On the <strong>Review</strong> page leave all the defaults and click <strong>Create task</strong>.</p>
+<hr>
+<h2 id="pre---b-31-b-">title : &ldquo;Onpremises file copy to S3 using DataSync&rdquo;
+date : &ldquo;<strong>r Sys.Date()</strong>&rdquo;
+weight : 1
+chapter : false
+pre : &quot; <!-- raw HTML omitted --> 3.1. <!-- raw HTML omitted --> &quot;</h2>
 <h2 id="run-the-task">Run the task</h2>
 <p>Ensure the <strong>Task status</strong> is <strong>available</strong>. It may take a few minutes.</p>
 <p>Click <strong>Start</strong>, leave the default settings, and click <strong>Start</strong>. The Task status will change to running.</p>
@@ -887,7 +910,7 @@
 			<a class="nav nav-prev" href="../../3-data-migration/" title="Data migration"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="../../3-data-migration/3.2-file-gateway/" title="Acces S3 bucket on-premises using File Gateway" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="../../3-data-migration/3.2-file-gateway/" title="Acces S3 bucket from on-premises using File Gateway" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -897,19 +920,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../../js/clipboard.min.js?1712748320"></script>
-    <script src="../../js/perfect-scrollbar.min.js?1712748320"></script>
-    <script src="../../js/perfect-scrollbar.jquery.min.js?1712748320"></script>
-    <script src="../../js/jquery.sticky.js?1712748320"></script>
-    <script src="../../js/featherlight.min.js?1712748320"></script>
-    <script src="../../js/highlight.pack.js?1712748320"></script>
+    <script src="../../js/clipboard.min.js?1712753602"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1712753602"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1712753602"></script>
+    <script src="../../js/jquery.sticky.js?1712753602"></script>
+    <script src="../../js/featherlight.min.js?1712753602"></script>
+    <script src="../../js/highlight.pack.js?1712753602"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../../js/modernizr.custom-3.6.0.js?1712748320"></script>
-    <script src="../../js/learn.js?1712748320"></script>
-    <script src="../../js/hugo-learn.js?1712748320"></script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1712753602"></script>
+    <script src="../../js/learn.js?1712753602"></script>
+    <script src="../../js/hugo-learn.js?1712753602"></script>
 
-    <link href="../../mermaid/mermaid.css?1712748320" rel="stylesheet" />
-    <script src="../../mermaid/mermaid.js?1712748320"></script>
+    <link href="../../mermaid/mermaid.css?1712753602" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1712753602"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
