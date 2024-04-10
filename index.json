@@ -4,7 +4,7 @@
 	"title": "AWS DataSync",
 	"tags": [],
 	"description": "",
-	"content": "Overall In this lab you will simulate the migration of a legacy on-premises file system to S3. You will use DataSync to migrate data from on-premises to AWS. You will then use Storage Gateway to present a file system back to on-premises.\nContent Content  Introduction  Preparation Data Migration Clean Up Resources  "
+	"content": "Migration Data to AWS using DataSync Overall In this lab you will simulate the migration of a legacy on-premises file system to S3. You will use DataSync to migrate data from on-premises to AWS. You will then use Storage Gateway to present a file system back to on-premises.\nContent Content  Introduction  Preparation Data Migration Clean Up Resources  "
 },
 {
 	"uri": "/2-prerequiste/2.1-create-s3/",
