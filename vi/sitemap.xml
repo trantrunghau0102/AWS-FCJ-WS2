@@ -2,172 +2,172 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/vi/1-introduce/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-introduce/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/1-introduce/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-introduce/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/1-introduce/"
                 />
   </url><url>
-    <loc>/vi/3-data-migration/3.1-copy-to-s3/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/3-data-migration/3.1-copy-to-s3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-data-migration/3.1-copy-to-s3/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/3-data-migration/3.1-copy-to-s3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-data-migration/3.1-copy-to-s3/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/3-data-migration/3.1-copy-to-s3/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/2.1-create-s3/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/2-prerequiste/2.1-create-s3/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.1-create-s3/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/2-prerequiste/2.1-create-s3/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.1-create-s3/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/2-prerequiste/2.1-create-s3/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/2-prerequiste/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/2-prerequiste/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/2.2-deploy-cloudformation-template/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/2-prerequiste/2.2-deploy-cloudformation-template/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.2-deploy-cloudformation-template/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/2-prerequiste/2.2-deploy-cloudformation-template/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.2-deploy-cloudformation-template/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/2-prerequiste/2.2-deploy-cloudformation-template/"
                 />
   </url><url>
-    <loc>/vi/3-data-migration/3.2-file-gateway/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/3-data-migration/3.2-file-gateway/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-data-migration/3.2-file-gateway/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/3-data-migration/3.2-file-gateway/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-data-migration/3.2-file-gateway/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/3-data-migration/3.2-file-gateway/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/2.3-edit-sg/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/2-prerequiste/2.3-edit-sg/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/2.3-edit-sg/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/2-prerequiste/2.3-edit-sg/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/2.3-edit-sg/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/2-prerequiste/2.3-edit-sg/"
                 />
   </url><url>
-    <loc>/vi/3-data-migration/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/3-data-migration/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-data-migration/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/3-data-migration/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-data-migration/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/3-data-migration/"
                 />
   </url><url>
-    <loc>/vi/3-data-migration/3.3-cutover/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/3-data-migration/3.3-cutover/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-data-migration/3.3-cutover/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/3-data-migration/3.3-cutover/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-data-migration/3.3-cutover/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/3-data-migration/3.3-cutover/"
                 />
   </url><url>
-    <loc>/vi/4-cleanup/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/4-cleanup/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-cleanup/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/4-cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-cleanup/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/4-cleanup/"
                 />
   </url><url>
-    <loc>/vi/3-data-migration/3.4-optimize/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/3-data-migration/3.4-optimize/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-data-migration/3.4-optimize/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/3-data-migration/3.4-optimize/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-data-migration/3.4-optimize/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/3-data-migration/3.4-optimize/"
                 />
   </url><url>
-    <loc>/vi/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/"
                 />
   </url><url>
-    <loc>/vi/categories/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/categories/"
                 />
   </url><url>
-    <loc>/vi/tags/</loc>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/tags/"
                 />
   </url>
 </urlset>
