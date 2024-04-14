@@ -2,6 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="vi"
+                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/"
+                />
+  </url><url>
     <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/1-introduce/</loc>
     <xhtml:link
                 rel="alternate"
@@ -132,18 +144,6 @@
                 rel="alternate"
                 hreflang="vi"
                 href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/3-data-migration/3.4-optimize/"
-                />
-  </url><url>
-    <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/"
                 />
   </url><url>
     <loc>https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/categories/</loc>

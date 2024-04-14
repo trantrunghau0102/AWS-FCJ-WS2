@@ -1,5 +1,12 @@
 [
 {
+	"uri": "https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/",
+	"title": "AWS DataSync (Di chuyển dữ liệu lên AWS sử dụng DataSync)",
+	"tags": [],
+	"description": "",
+	"content": "Di chuyển dữ liệu lên AWS sử dụng DataSync Tổng quan Trong bài thực hành này, bạn sẽ mô phỏng việc di chuyển một hệ thống tập tin cục bộ cũ sang S3. Bạn sẽ sử dụng DataSync để di chuyển dữ liệu từ on-premises lên AWS. Sau đó, bạn sẽ sử dụng Storage Gateway để cung cấp lại một hệ thống tập tin trở lại on-premises.\nNội dung Nội dung  Giới thiệu  (Giới thiệu về DataSync) Chuẩn bị  (Các bước chuẩn bị trước khi thực hiện) [Di chuyển dữ liệu ] (3-data-migration/) (Thực hiện di chuyển dữ liệu) Dọn dẹp tài nguyên  (Xóa các tài nguyên được tạo)  "
+},
+{
 	"uri": "https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/1-introduce/",
 	"title": "Giới thiệu",
 	"tags": [],
@@ -75,13 +82,6 @@
 	"tags": [],
 	"description": "",
 	"content": "Với tất cả dữ liệu trong S3 Bucket (thùng lưu trữ S3), giờ đây bạn đã sẵn sàng để tắt máy chủ NFS của mình và chuyển sang sử dụng File Gateway באופן độc quyền (độc quyền). Trong module này, bạn sẽ unmount (dỡ treo) máy chủ NFS và dọn sạch các tài nguyên DataSync của mình. Sau đó, bạn sẽ ghi một số file thử nghiệm thông qua File Gateway, xác minh rằng chúng kết thúc trong S3 Bucket.\nCutover sang File Gateway Đi đến môi trường On-premises (us-west-2) nếu bạn chưa ở đó.\nKết nối với SID-appserver qua EC2 Instance Connect (Kết nối Instance EC2)\nTrong CLI (Giao diện Dòng lệnh), chạy lệnh sau để unmount NFS share (dỡ treo chia sẻ NFS):\nsudo umount /mnt/data Run the following command to create another new file in the S3 bucket through File Gateway.\nsudo cp /mnt/fgw/AWS-FCJ-WS2/images/00002.jpg /mnt/fgw/new-image2.jpg Trở lại môi trường Vùng In-cloud (us-east-1).\nTừ AWS console, nhấp vào Services (Dịch vụ) và chọn S3.\nClick vào bucket sid-datasync-xxxxxx (S3 Bucket sid-datasync-xxxxxx).\nBên trong bucket bây giờ bạn sẽ thấy new-images2.jpg (tên file gốc).\n\rMáy chủ ứng dụng của bạn đã hoàn thành cutover (chuyển đổi)! Bây giờ bạn có thể đọc tất cả các file từng nằm trên máy chủ NFS bằng cách sử dụng Share File Gateway. Và bất kỳ file mới nào được ghi vào Share sẽ tự động được upload lên S3 Bucket (thùng lưu trữ S3). Bây giờ bạn có thể ngừng hoạt động và loại bỏ máy chủ NFS của mình!\nMột lợi ích của việc sử dụng File Gateway là nó lưu trữ các file dưới dạng các object (đối tượng) hoàn chỉnh, hoàn toàn có thể truy cập được trong S3. Với dữ liệu của bạn trong S3 (Amazon Simple Storage Service - Dịch vụ lưu trữ đơn giản của Amazon), giờ đây bạn có thể sử dụng các dịch vụ như Amazon Athena (phân tích dữ liệu), Amazon SageMaker (Máy học), Amazon EMR (Xử lý dữ liệu theo lô) và nhiều dịch vụ AWS khác để có được giá trị và thông tin chi tiết thậm chí còn lớn hơn từ dữ liệu của bạn.\n"
-},
-{
-	"uri": "https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/",
-	"title": "AWS System Manager",
-	"tags": [],
-	"description": "",
-	"content": ""
 },
 {
 	"uri": "https://trantrunghau0102.github.io/AWS-FCJ-WS2/vi/categories/",

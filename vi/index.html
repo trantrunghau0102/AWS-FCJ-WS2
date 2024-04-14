@@ -9,24 +9,24 @@
 
     <link rel="icon" href="/AWS-FCJ-WS2/images/favicon.png" type="image/png">
 
-    <title>AWS System Manager :: AWS System Manager</title>
+    <title>AWS DataSync (Di chuyển dữ liệu lên AWS sử dụng DataSync) :: AWS System Manager</title>
 
     
-    <link href="/AWS-FCJ-WS2/css/nucleus.css?1712764536" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1712764536" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hybrid.css?1712764536" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1712764536" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1712764536" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1712764536" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1712764536" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/theme.css?1712764536" rel="stylesheet">
-    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1712764536" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/nucleus.css?1713093617" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/fontawesome-all.min.css?1713093617" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hybrid.css?1713093617" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/featherlight.min.css?1713093617" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/perfect-scrollbar.min.css?1713093617" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/auto-complete.css?1713093617" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/atom-one-dark-reasonable.css?1713093617" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme.css?1713093617" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/hugo-theme.css?1713093617" rel="stylesheet">
     
-    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1712764536" rel="stylesheet">
+    <link href="/AWS-FCJ-WS2/css/theme-workshop.css?1713093617" rel="stylesheet">
     
     
 
-    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1712764536"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery-3.3.1.min.js?1713093617"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1712764536"></script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1712764536"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/lunr.min.js?1713093617"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/auto-complete.js?1713093617"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/trantrunghau0102.github.io\/AWS-FCJ-WS2\/vi";
     
 </script>
-<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1712764536"></script>
+<script type="text/javascript" src="/AWS-FCJ-WS2/js/search.js?1713093617"></script>
 
     
   </div>
@@ -525,17 +525,19 @@
 <a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
 </span>
 
-           
-	
-		<h1>Customize your own home page</h1>
-		<p>
-		  The site is working. Don't forget to customize this homepage with your own. You typically have 3 choices :
-		</p>
-		<ul>
-			<li><b>1. </b> Create an _index.md document in <b>content</b> folder and fill it with Markdown content</li>
-			<li><b>2. </b> Create an <b>index.html</b> file in the <b>static</b> folder and fill the file with HTML content</li>
-		  <li><b>3. </b> Configure your server to automatically redirect home page to one your documentation page</li>
-		</ul>
+ 
+<h1 id="di-chuyển-dữ-liệu-lên-aws-sử-dụng-datasync">Di chuyển dữ liệu lên AWS sử dụng DataSync</h1>
+<h3 id="tổng-quan">Tổng quan</h3>
+<p>Trong bài thực hành này, bạn sẽ mô phỏng việc di chuyển một hệ thống tập tin cục bộ cũ sang S3. Bạn sẽ sử dụng DataSync để di chuyển dữ liệu từ on-premises lên AWS. Sau đó, bạn sẽ sử dụng Storage Gateway để cung cấp lại một hệ thống tập tin trở lại on-premises.</p>
+<p><img src="/AWS-FCJ-WS2/images/0/Untitled.png" alt="Untitled"></p>
+<h2 id="nội-dung">Nội dung</h2>
+<h3 id="nội-dung-1">Nội dung</h3>
+<ol>
+<li><a href="1-introduce/">Giới thiệu </a> (Giới thiệu về DataSync)</li>
+<li><a href="2-prerequiste/">Chuẩn bị </a> (Các bước chuẩn bị trước khi thực hiện)</li>
+<li>[Di chuyển dữ liệu ] (3-data-migration/) (Thực hiện di chuyển dữ liệu)</li>
+<li><a href="4-cleanup">Dọn dẹp tài nguyên </a> (Xóa các tài nguyên được tạo)</li>
+</ol>
 	
   
         
@@ -767,19 +769,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1712764536"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1712764536"></script>
-    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1712764536"></script>
-    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1712764536"></script>
-    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1712764536"></script>
-    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1712764536"></script>
+    <script src="/AWS-FCJ-WS2/js/clipboard.min.js?1713093617"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.min.js?1713093617"></script>
+    <script src="/AWS-FCJ-WS2/js/perfect-scrollbar.jquery.min.js?1713093617"></script>
+    <script src="/AWS-FCJ-WS2/js/jquery.sticky.js?1713093617"></script>
+    <script src="/AWS-FCJ-WS2/js/featherlight.min.js?1713093617"></script>
+    <script src="/AWS-FCJ-WS2/js/highlight.pack.js?1713093617"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1712764536"></script>
-    <script src="/AWS-FCJ-WS2/js/learn.js?1712764536"></script>
-    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1712764536"></script>
+    <script src="/AWS-FCJ-WS2/js/modernizr.custom-3.6.0.js?1713093617"></script>
+    <script src="/AWS-FCJ-WS2/js/learn.js?1713093617"></script>
+    <script src="/AWS-FCJ-WS2/js/hugo-learn.js?1713093617"></script>
 
-    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1712764536" rel="stylesheet" />
-    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1712764536"></script>
+    <link href="/AWS-FCJ-WS2/mermaid/mermaid.css?1713093617" rel="stylesheet" />
+    <script src="/AWS-FCJ-WS2/mermaid/mermaid.js?1713093617"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
